@@ -1,0 +1,22 @@
+.optionBtn {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 3px 3px rgb(169 169 169 / 75%);
+    transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 500ms;
+}
+.optionBtn:not(:last-child) {
+    margin-right: 20px;
+}
+.optionBtn:hover,
+.optionBtn:focus {
+    transform: scale(1.1);
+    box-shadow: inset 0px 0px 3px 3px rgba(110, 107, 110, 1);
+}
+.buttonWrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
