@@ -1,4 +1,3 @@
-import {PropTypes} from "prop-types"
 import { Component } from "react";
 import { Section } from "./Section/Section";
 import { FeedbackOptions } from "./Feedback/FeedbackOptions";
