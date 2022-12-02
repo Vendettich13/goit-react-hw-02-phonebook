@@ -1,9 +1,0 @@
-.statWrapper {
-    margin-top: 20px;
-}
-.statItem {
-    font-size: 18px;
-}
-.statItem:not(:first-child) {
-    margin-top: 10px;
-}
