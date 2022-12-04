@@ -27,10 +27,11 @@ export class App extends Component {
   }
 
   handleSubmit = (name, number) => {
-    const isExist = this.state.contacts.map(contact => { return contact.name })
-      if (isExist.includes(name)) {
+    const isExist = this.state.contacts.find(contact => { return contact.name === name })
+      if (isExist) {
         return alert(`${name} is already in contacts.`)
-      } else this.setState(prevState => ({
+    }
+    this.setState(prevState => ({
         contacts: [...prevState.contacts, { name, id: nanoid(), number }]
       }))
       this.setState({ name: '', number: '' })
